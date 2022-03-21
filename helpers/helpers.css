@@ -1,0 +1,83 @@
+
+/* TABLES */
+
+
+h2 {
+    border: 2px solid #ff0000; }
+                
+a   {
+    border: 2px solid #ff0000;
+}
+
+
+
+.mybutton {
+    display: inline-block;
+}
+
+/* Example Horizontal Navigation */
+ul {
+    background-color: gray; 
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border-top: 5px dotted black;
+    border-bottom:5px dotted black;
+}
+  
+li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+  
+
+/* same colour*/
+p #col_name {color: blue; }
+p #col_rgb {color: rgb(0,0,255);}
+p #col_hex { color: #0000FF; }
+p #col_hsl {color: hsl(240, 100%, 50%,)}
+
+/* same colour but 50% transparent*/
+h1 #col_hsla {color: hsla(240, 100%, 50%, .5);}
+h1 #col_rgba {color: rgba(0, 0, 255, .5); }
+
+
+/* MEDIA QUERIES */
+
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+    #pagewrap {
+      width: 94%;
+    }
+    section {
+      width: 65%;
+    }
+      aside {
+        width: 30%;
+    } }
+    
+    /* for 700px or less */
+    @media screen and (max-width: 700px) {
+    section {
+      width: auto;
+      float: none;
+    }
+     aside {
+       width: auto;
+      float: none;
+    } }
+    
+    /* for 480px or less */
+    @media screen and (max-width: 480px) {
+    header {
+      height: auto;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    aside {
+      display: none;
+    } }
+    

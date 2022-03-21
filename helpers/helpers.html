@@ -1,0 +1,215 @@
+
+
+--------------------------------------------------------
+<!-- ************ Helpers ****************** -->
+--------------------------------------------------------
+
+<!-- *** Add a Header *** -->
+<head>
+    <title>My Website</title>
+    <meta charset="utf-8">
+</head>
+
+<!-- *** Add Body *** -->
+<body>
+    Hello World
+</body>
+
+<!-- *** Add an External Link *** -->
+<a href="https://www.adverts.ie">Go to news</a>
+
+<!-- *** Add quotes *** -->
+<q>Brevity is beautiful</q> 
+
+<!-- *** Add blockquotes *** -->
+<blockquote>Brevity is beautiful</blockquote> 
+
+<!-- *** Add a list *** -->
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+
+<!-- *** Add a line break ***  -->
+<br>
+
+<!-- *** Add an image from a remote source *** -->
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+<!-- *** Add an ID to a tag *** -->
+<p id="para1">I am paragraph 1</p>
+<p id="para2">I am paragraph 2</p>
+
+<!-- *** Add an class to a tag *** -->
+<p class="para1">I am paragraph 1</p>
+<p class="para2">I am paragraph 2</p>
+
+<!-- *** Formatting Text *** -->
+<b> This text is bold </b>
+<i> This text is italic </i>
+<u> This text is underlined </u>
+
+--------------------------------------------------------------------------------------------
+
+<!-- ************ Lecture 3: HTML continued ****************** -->
+
+<!-- *** Images *** -->
+
+<!-- Image with height and width specified -->
+<img src="michael.png" height="640px" width="360px">
+
+<!-- Image with alternative text if error occurs locating resource -->
+<img src="michael.png" alt="Placeholder text">
+
+
+<!-- *** Links *** -->
+
+<!-- Link to external Site -->
+<a href="www.ucc.ie">UCC</a>
+
+<!-- Link to external resource, such as image.       -->
+<a href="https://www.ucc.ie/en/media/2017siteassets/images/ucc_logo.svg">UCC Logo</a>
+
+<!-- Link to page on your own site -->
+<a href="index.html">Home</a>
+
+<!-- Link to a specific place on the same page (referencing the ID "top" here) -->
+<a href="#top">Top of Page</a>
+
+<!-- Link to a specific section on a different page -->
+<a href="news.html#topstory">Todays Top Story</a>
+
+<!-- Email Link -->
+<a href="mailto://random@emailaddress.com">Contact Us</a>
+
+<!-- Link to JavaScript Function -->
+<a href="javascript://RandomPopupSurprise();">Surprise</a>
+
+<!-- Phone link -->
+<a href="tel:+1800000000">Phone Us</a>
+
+<!-- Open in new page -->
+<a href="https://www.adverts.ie" target="_blank">Go to news</a>
+
+
+<!-- *** Referencing *** -->
+
+<!-- Absolute reference (online resource) -->
+<img src="https://www.ucc.ie/en/media/2017siteassets/images/ucc_logo.svg">
+
+<!-- Relative reference (local resource) -->
+<img src=“picture.png“>
+
+<!-- Resource is in the folder one level up from the current page -->
+<img src=“../picture.png“>
+
+<!-- Resource is in the images folder located in the same folder as the current page -->
+<img src=“images/picture.png“>
+
+--------------------------------------------------------------------------------------------
+
+<!-- ************ Lecture 4: Introductory CSS & Tables ******************-->
+
+<!-- *** Embedded CSS ***  -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+              background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+    </body>
+</html>
+
+<!-- *** Inline CSS ***  -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 style="color:blue;text-align:center;">This is a heading</h1>
+        <p style="color:red;">This is a paragraph.</p>
+    </body>
+</html>
+
+<!-- *** CSS External Styles ***  -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="helpers.css">
+    </head>
+    <body>
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+        <ul>
+            <li>list item 1</li>
+            <li>list item 2</li>
+        </ul>
+     </body>
+</html>
+
+<!-- *** Tables ***  -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/helpers.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <td>Ernst Handel</td>
+              <td>Roland Mendel</td>
+              <td>Austria</td>
+            </tr>
+          </table>
+     </body>
+</html>
+
+
+<!-- *** HTML Table with colspan/rowspan ***  -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <table>
+            <tr>
+              <th colspan = "3">Company</th>
+              <th colspan = "3">Contact</th>
+              <th colspan = "3">Country</th>
+            </tr>
+            <tr rowspan = "2">
+              <td >Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <td>Ernst Handel</td>
+              <td>Roland Mendel</td>
+              <td>Austria</td>
+            </tr>
+          </table>
+     </body>
+</html>		
